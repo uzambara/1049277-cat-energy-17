@@ -1,0 +1,67 @@
+.how-it-works {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 48px;
+}
+
+.how-it-works__title {
+  color: #111111;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.how-it-works__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.how-it-works__item {
+  padding-left: 80px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-color: #68b738;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.how-it-works__item--ingridients {
+  &::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+}
+
+.how-it-works__item--cooking {
+  &::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+}
+
+.how-it-works__item--usage {
+  &::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+}
+
+.how-it-works__item--deadlines {
+  &::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
+}
+
+.how-it-works__text {
+  .simple-text();
+}
