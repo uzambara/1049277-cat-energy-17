@@ -2,18 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/191x39" alt="Питание для котов Cat energy" width="191"
+        <img class="page-header__logo-image" src="./img/logo-mobile.svg" alt="Питание для котов Cat energy" width="191"
           height="39">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list main-nav__list--closed">
           <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__item-link main-nav__item-link--current">Главная</a>
           </li>
@@ -30,21 +32,21 @@
       <section class="main-content__intro intro">
         <h1 class="intro__title" id="h1">Функциональное питание для котов</h1>
         <p class="intro__text">Занялся собой? Займись котом!</p>
-        <img class="intro__image" src="http://placehold.it/280x270" alt="Cat energy pro с курицей" width="280"
+        <img class="intro__image" src="./img/index-can-mobile@1x.png" alt="Cat energy pro с курицей" width="280"
           height="270">
-        <a class="intro__select-programm-btn" href="programm-selection.html">Подобрать программу</a>
+        <a class="button button--mobile intro__select-programm-btn" href="programm-selection.html">Подобрать программу</a>
       </section>
       <section class="main-content__programm-types programm-types">
         <h2 class="visually-hidden">Виды программ</h2>
         <ul class="programm-types__list">
           <li class="programm-types__item programm-description">
-            <h3 class="programm-description__title">Похудение</h3>
+            <h3 class="programm-description__title programm-description__title--slim">Похудение</h3>
             <p class="programm-description__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
               диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programm-description__link" href="catalog-slim.html">Каталог slim</a>
           </li>
           <li class="programm-types__item programm-description">
-            <h3 class="programm-description__title">Набор массы</h3>
+            <h3 class="programm-description__title programm-description__title--pro">Набор массы</h3>
             <p class="programm-description__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
               вашему коту нарастить необходимые мышцы!</p>
             <a class="programm-description__link" href="catalog-pro.html">Каталог pro</a>
@@ -61,7 +63,7 @@
             <p class="how-it-works__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="how-it-works__item how-it-works__item--usage">
-            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="how-it-works__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="how-it-works__item how-it-works__item--deadlines">
             <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -83,8 +85,8 @@
             <span>затрачено времени</span>
           </li>
         </ul>
-        <p class="experience__expenses">Зараты на питание: 15 000 руб.</p>
-        <img class="experience__image" src="http://placehold.it/311x232" alt="Толстый кот борис" width="311" height="232">
+        <p class="experience__expenses">Затраты на питание: 15 000 руб.</p>
+        <img class="experience__image" src="./img/before-desktop@1x.png" alt="Толстый кот борис" width="311" height="232">
         <div class="experience__graphic graphic">
           <b class="graphic__before">было</b>
           <b class="graphic__after">стало</b>
