@@ -4,4 +4,7 @@ toggleButton.addEventListener("click", function(){
 
   menu.classList.toggle("main-nav__list--opened");
   menu.classList.toggle("main-nav__list--closed");
+
+  toggleButton.classList.toggle("main-nav__toggle--close");
+  toggleButton.classList.toggle("main-nav__toggle--open");
 });
