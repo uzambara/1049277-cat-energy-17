@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 11px 20px 15px 20px;
 }
 
 .page-header__logo {
@@ -11,9 +12,40 @@
   display: inline-block;
   padding-top: 11px;
   padding-bottom: 11px;
+  background-image: url("../../img/logo-mobile.svg");
+  width: 191px;
+  height: 39px;
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 39px;
 }
 
 .page-header__nav {
   width: 100%;
   position: relative;
+}
+
+@media (min-width: @tablet-size) {
+  .page-header {
+    max-width: @tablet-size;
+    margin: 0 @tablet-side-margin;
+    padding: 24px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    padding: 0;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+
+  .page-header__nav {
+    width: auto;
+  }
 }
