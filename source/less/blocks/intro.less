@@ -6,6 +6,15 @@
   padding-top: 27px;
   .container();
   padding-bottom: 22px;
+
+  @media (min-width: @tablet-size) {
+    color: black;
+    padding-top: 55px;
+    min-height: 865px;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-position: bottom;
+    padding-left: 90px;
+  }
 }
 
 .intro__title {
@@ -14,6 +23,15 @@
   line-height: 1;
   font-weight: normal;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-size) {
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+    max-width: 420px;
+    margin-bottom: 40px;
+  }
 }
 
 .intro__text {
@@ -21,6 +39,15 @@
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 27px;
+
+  @media (min-width: @tablet-size) {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+    margin-bottom: 47px;
+  }
 }
 
 .intro__image {
@@ -28,8 +55,16 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 6px;
+
+  @media (min-width: @tablet-size) {
+    display: none;
+  }
 }
 
 .intro__select-programm-btn {
   width: 100%;
+
+  @media (min-width: @tablet-size) {
+    max-width: 245px;
+  }
 }
