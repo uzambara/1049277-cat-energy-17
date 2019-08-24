@@ -41,6 +41,27 @@
   }
 }
 
+.main-content__how-it-works {
+  margin-bottom: 48px;
+
+  @media (min-width: @tablet-size) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .main-content__how-it-works::after {
+    content: "";
+    display: block;
+    width: 768px;
+    height: 1px;
+    background-color: #dcdcdc;
+    margin-left: -30px;
+    margin-top: 15px;
+  }
+}
+
+
 .main-content__catalog-list {
   .container();
   margin-bottom: 26px;

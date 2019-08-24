@@ -1,9 +1,19 @@
 .simple-text {
-  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 1.29;
   color: #444444;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  @media (min-width: @tablet-size) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .container {
@@ -15,5 +25,18 @@
     padding-left: 0;
     margin-right: 30px;
     margin-left: 30px;
+  }
+}
+
+.page-section-title {
+  color: #111111;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: normal;
+
+  @media (min-width: @tablet-size) {
+    color: #111111;
+    font-size: 60px;
+    line-height: 1;
   }
 }
