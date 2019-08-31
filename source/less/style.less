@@ -25,6 +25,14 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   max-width: @mobile-size;
   margin: 0 auto;
+
+  @media (min-width: @tablet-size) {
+    max-width: @tablet-size;
+  }
+
+  @media (min-width: @desktope-size) {
+    max-width: @desktope-size;
+  }
 }
 
 body * {
@@ -40,10 +48,4 @@ body * {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: @tablet-size) {
-  body {
-    max-width: @tablet-size;
-  }
 }
